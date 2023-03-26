@@ -1,6 +1,6 @@
 import numpy as np
 import random
-
+number_of_iterations = int(input("Enter the number of iterations: "))
 #Generate Numbers
 data = [random.randint(1, 100000) for _ in range(300)]
 data = np.array(data).reshape(-1, 1)
@@ -23,7 +23,7 @@ prev_centroids = np.zeros(centroids.shape)
 clusters = np.zeros(len(X))
 
 # Loop until one of the stopping conditions is met
-for iteration in range(1000000):
+for iteration in range(number_of_iterations):
     # Assign each data point to the closest centroid
     for i in range(len(X)):
         distances = np.linalg.norm(X[i] - centroids, axis=1)
