@@ -13,7 +13,7 @@ Note: The program will stop running after 1,000,000 iterations or when the centr
 
 ## Dependencies
 ### This program requires the following dependencies:
-+ numpy
++ [numpy](https://numpy.org/)
 
 ## Credits
 This program was written by KenPrz.
